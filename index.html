@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>SURVEY FORM</h1>
+    <form action="action.php" method="post" id="form">
+      <div class="form-control">
+        <label for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+        />
+      </div>
+
+      <!-- 
+        <label for="name">MiddleName</label>
+        <input type="text" name="middle" id="middle">
+
+        <label for="name">LastName</label>
+        <input type="text" name="lastname" id="lastname"> -->
+
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+      </div>
+      
+
+      <div class="form-control">
+        <label for="age">Age</label>
+        <input type="age" name="age" id="age" placeholder="Enter your age" />
+      </div>
+      
+
+      <div class="form-control" id="gender">
+        <label for="gender">Gender</label>
+        <label for="male">
+        <input type="radio" name="gender" id="male" value="male" />
+        Male</label>
+        <label for="female">
+        <input type="radio" name="gender" id="female" value="female" />
+        Female</label>
+
+        <label for="other">
+        <input type="radio" name="gender" id="other" value="other" />
+        Other</label>
+      </div>
+
+      
+
+      <div class="form-control">
+        <label for="role">Which option best describes you?</label>
+
+        <select name="role" id="role">
+        
+            <option value="deault">Select</option>
+          <option value="student">Student</option>
+          <option value="intern">Intern</option>
+          <option value="professional">Professional</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      
+
+      <div class="form-control">
+        <label for=""
+          >Langauages and Frameworks known
+          <small>(check all that apply)</small> </label
+        >
+
+        <label for="1"> <input type="checkbox" name="1" id="c" /> c </label>
+        
+
+        <label for="2"> <input type="checkbox" name="2" id="c++" />c++ </label
+        >
+        <label for="3"> <input type="checkbox" name="3" id="c#" />c# </label
+        >
+
+        <label for="4"> <input type="checkbox" name="4" id="java" />Java </label
+        >
+
+        <label for="5"> <input type="checkbox" name="5" id="php" />Php </label
+        >
+
+        <label for="6">
+          <input type="checkbox" name="6" id="js" />JavaScript </label
+        >
+
+        <label for="7">
+          <input type="checkbox" name="7" id="react" />React
+        </label>
+      </div>
+      
+
+      <div class="form-control">
+        <label for="comment">Any comments or suggentions</label>
+        <textarea name="comment" id="" cols="30" rows="10"></textarea>
+      </div>
+      
+
+      <input type="submit" value="submit" />
+      <input type="Reset" value="reset" />
+    </form>
+  </body>
+</html>
